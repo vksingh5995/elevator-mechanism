@@ -1,0 +1,46 @@
+.elevator {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  width: 80px;
+  height: 100px;
+  left: 250px;
+  border-radius: 8px;
+  transition: bottom 0.8s ease-in-out;
+
+  &.moving {
+    background-color: green; // Elevator is moving
+  }
+
+  &.waiting {
+    background-color: yellow; // Elevator is waiting
+  }
+
+  &.arrived {
+    background-color: green; // Elevator has arrived
+  }
+
+  &.stopped {
+    background-color: red; // Elevator is stopped and idle
+  }
+
+  .elevator-icon {
+    width: 100%;
+    height: 100%;
+    background: url("../assets/lift-sign.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  .elevator-icons {
+    width: 100%;
+    height: 100%;
+    background: url("../assets/elevator.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+}
