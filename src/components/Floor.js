@@ -15,6 +15,7 @@ const Floor = ({ floorNumber, callElevator }) => {
           ? "3rd Floor"
           : `${floorNumber}th Floor`}
       </span>
+      {floorNumber * 13.5}vh
       <CallButton floorNumber={floorNumber} callElevator={callElevator} />
     </div>
   );

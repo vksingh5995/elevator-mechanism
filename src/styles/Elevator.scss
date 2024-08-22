@@ -8,10 +8,10 @@
   height: 100px;
   left: 250px;
   border-radius: 8px;
-  transition: bottom 0.8s ease-in-out;
+  transition: bottom 0s linear;
 
   &.moving {
-    background-color: green; // Elevator is moving
+    background-color: rgb(128, 58, 0); // Elevator is moving
   }
 
   &.waiting {

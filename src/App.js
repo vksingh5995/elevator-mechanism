@@ -35,9 +35,12 @@ const App = () => {
         <Elevator
           currentFloor={currentFloor}
           targetFloor={targetFloor}
-          onArrive={() => setTargetFloor(null)}
+          setCurrentFloor={setCurrentFloor}
+          onArrive={(e) => {
+            setTargetFloor(null);
+          }}
         />
-        <ElevatorSystem />
+        {/* <ElevatorSystem /> */}
       </div>
     </div>
   );
